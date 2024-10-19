@@ -1,3 +1,44 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1628498188904-036f5e25e93e?q=80&w=1527&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+h1 {
+  color: pink;
+}
+
 main {
     min-height: calc(100vh - 160px);
   }
+
+  .card {
+    max-height: 500px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex-grow: 1; /* Hace que el cuerpo de la tarjeta ocupe el espacio restante */
+    overflow-y: auto; /* Activa la barra de desplazamiento vertical */
+    max-height: 150px; 
+}
+
+.card img {
+    max-height: 165px; 
+    object-fit: cover; /* Asegura que la imagen mantenga sus proporciones */
+}
+
+
+.msjSinResultado {
+  color: pink;
+}
+
+
+.btn-violeta {
+  background-color: rgb(87, 0, 87); 
+  color: pink; 
+}
+
+.btn-violeta:hover {
+  background-color: rgb(14, 0, 20); /* Color de fondo al pasar el mouse */
+  color: pink;
+}
